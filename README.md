@@ -27,12 +27,13 @@ Note: We need to also install all the dependencies mentioned in the README.md fi
 The Testbench.bsv file contains the set of test cases which are passed to the cpu thats our Main.bsv to compute the results of the problem and sign the result and send it back to it. The Testbench.bsv verifies if there was any tampering or not by comparing the hashes.
 
 Command for the execution of the program are
+```bash
+ bsc -u -sim -g mkTestbench Testbench.bsv
 
- >***bsc -u -sim -g mkTestbench Testbench.bsv***
+ bsc -sim -e mkTestbench -o sim_testbench
 
- >***bsc -sim -e mkTestbench -o sim_testbench***
-
- >***./sim_testbench***
+ ./sim_testbench
+```
 
  Sample Output:
 ![image](https://github.com/user-attachments/assets/15c5a38d-de68-48d4-b362-263ebd5cb123)
@@ -46,6 +47,11 @@ Later the computed result is signed with the hash by appending the hash at the e
 log.txt consits of some of the outputs obtained for various cases.
 
 For the parsing of the string I have tried using the BDPI thats performing the entire parsing using a c file and send it back to the bsv file. But these can only be done for simulation purposes and cannot be syntesized. Hence not valid for us.
+
+```bash
+bsc -sim -u stringparser2.bsv
+```
+
 
 ![image](https://github.com/user-attachments/assets/878f4a02-02d5-4503-b783-4f066c9b9a56)
 
