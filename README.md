@@ -14,16 +14,13 @@ This project is a simplified CPU model built using Bluespec SystemVerilog (BSV).
 ```
 
 # Installation SetUp
-
- >***git clone https://github.com/B-Lang-org/bsc.git***
-
- >***cd bsc***
-
- >***./configure***
-
- >***make***
-
- >***sudo make install***
+```bash
+git clone https://github.com/B-Lang-org/bsc.git
+cd bsc
+./configure
+make
+sudo make install
+```
 
 Note: We need to also install all the dependencies mentioned in the README.md file of the Bsc github.
 
