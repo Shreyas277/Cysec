@@ -5,12 +5,14 @@ This project is a simplified CPU model built using Bluespec SystemVerilog (BSV).
 ```text
 ├── README.md                # This file     <br>
 ├── Discussion.md            # Answers to discussion questions  <br>
-├── log.txt                  # Testbench log for passed/failed verification  <br>
-├── Main.bsv                 # Top-level module combining B, C, D  <br>
-├── Operation.bsv            # Module B: 8-bit opcode-based ALU  <br>
-├── Hasher.bsv               # Module C: XOR-fold hash logic  <br>
-├── Signer.bsv               # Module D: XOR with 0xAB for signature  <br>
-└── Testbench.bsv            # Simulates CPU, verifies signature   <br>
+/logs
+     ├── log.txt                  # Testbench log for passed/failed verification  <br>
+/src
+     ├── Main.bsv                 # Top-level module combining B, C, D  <br>
+     ├── Operation.bsv            # Module B: 8-bit opcode-based ALU  <br>
+     ├── Hasher.bsv               # Module C: XOR-fold hash logic  <br>
+     ├── Signer.bsv               # Module D: XOR with 0xAB for signature  <br>
+     └── Testbench.bsv            # Simulates CPU, verifies signature   <br>
 ```
 
 # Installation SetUp
