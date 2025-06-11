@@ -1,0 +1,23 @@
+=== Test 1: Addition and Subtraction ===
+Sending: val1=10, op1=0(+), val2=5, op2=1(-), val3=3
+Expected: ((10 + 5) - 3) = 12
+Result: 12
+Signature: 0xca6
+ Signature VERIFIED - Test 1 PASSED
+
+=== Test 2: Multiplication and Division ===
+Sending: val1=8, op1=2(*), val2=4, op2=3(/), val3=2
+Expected: ((8 * 4) / 2) = 16
+Result: 2
+Signature: 0x2a4
+ Signature VERIFIED - Test 2 PASSED
+
+=== Test 3: Bitwise Operations ===
+Sending: val1=12, op1=4(&), val2=10, op2=5(|), val3=3
+Expected: ((12 & 10) | 3) = 11
+Result: 18
+Signature: 0x12af
+ Signature VERIFIED - Test 3 PASSED
+
+=== All Tests Completed ===
+Verification: Result extraction + Hash validation using XOR with constant
