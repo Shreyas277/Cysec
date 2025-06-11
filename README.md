@@ -13,6 +13,8 @@ This project is a simplified CPU model built using Bluespec SystemVerilog (BSV).
      ├── Hasher.bsv               # Module C: XOR-fold hash logic  <br>
      ├── Signer.bsv               # Module D: XOR with 0xAB for signature  <br>
      └── Testbench.bsv            # Simulates CPU, verifies signature   <br>
+├── string_parser2.c
+├── stringparser2.bsv
 ```
 
 # Installation SetUp
